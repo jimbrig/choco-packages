@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>backblaze</id>
+    <version>1.0</version>
+    <title>Backblaze Control Panel</title>
+    <authors>Jimmy Briggs</authors>
+    <projectUrl>https://backblaze.com</projectUrl>
+    <tags>backblaze backup cloud</tags>
+    <summary>Installs Backblaze Control Panel.</summary>
+    <description>Installs Backblaze Control Panel. </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
