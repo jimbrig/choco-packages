@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>copyhandler</id>
+    <version>1.46</version>
+    <title>copyhandler</title>
+    <authors>Jimmy Briggs</authors>
+    <tags>copyhandler automation copying</tags>
+    <summary>the open source, free file copy utility</summary>
+    <description>the open source, free file copy utility</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
