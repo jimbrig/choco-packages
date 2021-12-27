@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $pp = Get-PackageParameters
 
 if (!$pp['UserEmail']) { $pp['UserEmail'] = Read-Host "Enter email address for your backblaze account:" }
@@ -19,7 +20,7 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url
-  softwareName  = 'backblaze*'
+  softwareName  = 'backblaze-control-panel*'
   checksum      = '67C1927B9B6217E98FC03C91DFF241834DC735C31C77C2EE88FD48324746FC22'
   checksumType  = 'sha256'
   silentArgs    = $silentArgs

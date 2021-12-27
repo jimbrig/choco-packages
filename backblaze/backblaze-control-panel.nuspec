@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>backblaze-control-panel</id>
+    <version>8.0.1.567</version>
+    <title>Backblaze Control Panel</title>
+    <authors>Backblaze</authors>
+    <packageSourceUrl>https://github.com/jimbrig/choco-packages/blob/main/backblaze/backblaze.8.0.1.567.nupkg</packageSourceUrl>
+    <owners>Jimmy Briggs</owners>
+    <projectUrl>https://backblaze.com</projectUrl>
+    <projectSourceUrl>https://secure.backblaze.com/win32/install_backblaze.exe</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/jimbrig/choco-packages/issues</bugTrackerUrl>
+    <copyright>2021 Backblaze</copyright>
+    <docsUrl>https://www.backblaze.com/b2/docs/</docsUrl>
+    <iconUrl>https://github.com/jimbrig/choco-packages/blob/b4e0f906cbd56ffc80534c17a3077494e2d214d8/backblaze/bzlogo.png</iconUrl>
+    <licenseUrl>https://www.backblaze.com/company/terms.html#:~:text=Backblaze%20gives%20you%20a%20personal%2C%20worldwide%2C%20royalty-free%2C%20non-assignable,violate%20these%20Terms%2C%20we%20may%20terminate%20this%20license.</licenseUrl>
+    <tags>backblaze backup cloud</tags>
+    <releaseNotes>Initial Release</releaseNotes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Installs Backblaze Control Panel.</summary>
+    <description>
+    # Backblaze Desktop Client
+
+    **Package Parameters**
+
+    The following package parameters can be set to avoid the GUI popping up requesting credentials:
+
+    - `/UserEmail:` - email associated with your Backblaze account
+    - `/Password:` - password associated with your Backblaze account
+
+    To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+    To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+    </description>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
