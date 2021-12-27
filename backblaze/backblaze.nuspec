@@ -2,13 +2,27 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>backblaze</id>
-    <version>1.0</version>
+    <version>8.0.1.567</version>
     <title>Backblaze Control Panel</title>
     <authors>Jimmy Briggs</authors>
     <projectUrl>https://backblaze.com</projectUrl>
     <tags>backblaze backup cloud</tags>
     <summary>Installs Backblaze Control Panel.</summary>
-    <description>Installs Backblaze Control Panel. </description>
+    <description>
+    # Backblaze Desktop Client
+
+    ## Package Parameters
+    The following package parameters can be set to avoid the GUI popping up requesting credentials:
+
+    * `/UserEmail:` - email associated with your Backblaze account
+    * `/Password:` - password associated with your Backblaze account
+
+    To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+    To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+    </description>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
