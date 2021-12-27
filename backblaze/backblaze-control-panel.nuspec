@@ -6,14 +6,14 @@
     <version>8.0.1.567</version>
     <title>Backblaze Control Panel</title>
     <authors>Backblaze</authors>
-    <packageSourceUrl>https://github.com/jimbrig/choco-packages/blob/main/backblaze/backblaze.8.0.1.567.nupkg</packageSourceUrl>
+    <!-- <packageSourceUrl>https://github.com/jimbrig/choco-packages/backblaze/</packageSourceUrl> -->
     <owners>Jimmy Briggs</owners>
     <projectUrl>https://backblaze.com</projectUrl>
     <projectSourceUrl>https://secure.backblaze.com/win32/install_backblaze.exe</projectSourceUrl>
     <bugTrackerUrl>https://github.com/jimbrig/choco-packages/issues</bugTrackerUrl>
     <copyright>2021 Backblaze</copyright>
     <docsUrl>https://www.backblaze.com/b2/docs/</docsUrl>
-    <iconUrl>https://github.com/jimbrig/choco-packages/blob/b4e0f906cbd56ffc80534c17a3077494e2d214d8/backblaze/bzlogo.png</iconUrl>
+    <iconUrl>https://github.com/jimbrig/choco-packages/blob/main/assets/bzlogo.png</iconUrl>
     <licenseUrl>https://www.backblaze.com/company/terms.html#:~:text=Backblaze%20gives%20you%20a%20personal%2C%20worldwide%2C%20royalty-free%2C%20non-assignable,violate%20these%20Terms%2C%20we%20may%20terminate%20this%20license.</licenseUrl>
     <tags>backblaze backup cloud</tags>
     <releaseNotes>Initial Release</releaseNotes>
@@ -31,7 +31,11 @@
 
     To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
     To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-    </description>
+    
+
+    **[PACKAGE NOTES](https://github.com/jimbrig/choco-packages/blob/main/backblaze/README.md)**
+
+</description>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
